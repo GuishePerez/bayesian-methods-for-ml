@@ -17,17 +17,17 @@ In this assignment, we will derive and implement formulas for Gaussian Mixture M
 Loading auxiliary files and importing the necessary libraries.
 """
 
-try:
-    import google.colab
-    IN_COLAB = True
-except:
-    IN_COLAB = False
-if IN_COLAB:
-    print("Downloading Colab files")
-    ! shred -u setup_google_colab.py
-    ! wget https://raw.githubusercontent.com/hse-aml/bayesian-methods-for-ml/master/setup_google_colab.py -O setup_google_colab.py
-    import setup_google_colab
-    setup_google_colab.load_data_week2()
+# try:
+#     import google.colab
+#     IN_COLAB = True
+# except:
+#     IN_COLAB = False
+# if IN_COLAB:
+#     print("Downloading Colab files")
+#     ! shred -u setup_google_colab.py
+#     ! wget https://raw.githubusercontent.com/hse-aml/bayesian-methods-for-ml/master/setup_google_colab.py -O setup_google_colab.py
+#     import setup_google_colab
+#     setup_google_colab.load_data_week2()
 
 # Commented out IPython magic to ensure Python compatibility.
 import numpy as np
@@ -35,14 +35,14 @@ from numpy.linalg import slogdet, det, solve
 import matplotlib.pyplot as plt
 import time
 from sklearn.datasets import load_digits
-from w2_grader import EMGrader
+# from w2_grader import EMGrader
 # %matplotlib inline
 
 """### Grading
 We will create a grader instance below and use it to collect your answers. Note that these outputs will be stored locally inside grader and will be uploaded to the platform only after running submitting function in the last part of this assignment. If you want to make a partial submission, you can run that cell anytime you want.
 """
 
-grader = EMGrader()
+# grader = EMGrader()
 
 """## Implementing EM for GMM
 
